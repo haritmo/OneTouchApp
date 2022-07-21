@@ -1,9 +1,9 @@
-namespace Models.Http;
+namespace Hackathon.Models;
 public class RequestModel
 {
     public int DeviceId { get; set; } = 0;
 
     public string Placement { get; set; } = string.Empty;
 
-    public DateTime Timestamp { get; set; } = null;
+    public string Status { get; set; } = string.Empty;
 }
