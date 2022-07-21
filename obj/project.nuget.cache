@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "g8XtF6QrfRowfYkjmuvR8B20/MGFba7Apf39AHX9jjHQ70//snE7CJxRei/MvalgOMJRotU8eqr7VfNNcwn6jA==",
+  "dgSpecHash": "T3MubYbJMlOGRK5iQcEgkp8g3jQA0PGaw1d831uhaSdc1IG4HwZrE0VEaOU5+cRl/EwyTQHhUdU4DuYBV4KJYw==",
   "success": true,
-  "projectFilePath": "/Users/hariannamraju/OneTouchApp/OneTouchApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "c:\\Users\\Nikolai\\source\\github\\OneTouchApp\\OneTouchApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nikolai\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
+    "C:\\Users\\Nikolai\\.nuget\\packages\\azure.data.tables\\12.6.1\\azure.data.tables.12.6.1.nupkg.sha512",
+    "C:\\Users\\Nikolai\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\Nikolai\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "C:\\Users\\Nikolai\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\Nikolai\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Nikolai\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\Nikolai\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\Nikolai\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }
