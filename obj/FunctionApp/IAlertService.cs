@@ -1,8 +1,8 @@
-namespace Hackathon.Services;
-
 using System.Threading.Tasks;
+
+namespace Alert.Service.Interface;
 
 public interface IAlertService
 {
-public Task<ResponseModel> CreateAlert(int deviceId, string placement, DateTime timestamp);
+public Task<ResponseModel> CreateAlert(int deviceId);
 }

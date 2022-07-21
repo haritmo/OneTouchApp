@@ -1,4 +1,7 @@
 using System.Threading.Tasks;
+using Alert.Repository.Interface;
+
+namespace Alert.Service;
 
 public class alertService : IAlertService
 {
@@ -9,9 +12,9 @@ public class alertService : IAlertService
          _repository = repository;
      }
 
-     public Task<ResponseModel> CreateAlert(int deviceId, string placement, DateTime timestamp)
+     public Task<ResponseModel> CreateAlert(int deviceId)
     {
-         return _repository.CreateAlert(deviceId, placement,timestamp);
+         return _repository.CreateAlert(deviceId);
             
      }
 }
