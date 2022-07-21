@@ -20,20 +20,23 @@ namespace My.Function
 
         [FunctionName(nameof(CreateAlertMessage))]
         public static async Task<IActionResult> CreateAlertMessage(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "")] 
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "https://tmoonetouch.azurewebsites.net/alerts/{deviceId}/{placement}/{timestamp}")] 
             HttpRequest req,
+            int deviceId,
+            string placement,
+            DateTime timestamp,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
-            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject<RequestModel>(requestBody);
-            var response = await _alertService.CreateAlert(data);
+            //string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            //dynamic data = JsonConvert.DeserializeObject<RequestModel>(requestBody);
+            var response = await _alertService.CreateAlert(deviceId , placement , timestamp);
             return new OkObjectResult(response);
         }
 
         [FunctionName(nameof(GetAlertMessages))]
         public static async Task<IActionResult> GetAlertMessages(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] 
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "https://tmoonetouch.azurewebsites.net/alerts")] 
             HttpRequest req,
             ILogger log)
         {

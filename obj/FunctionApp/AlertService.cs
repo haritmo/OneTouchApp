@@ -9,7 +9,9 @@ public class alertService : IAlertService
          _repository = repository;
      }
 
-     public Task<ResponseModel> CreateAlert(RequestModel request){
-         return _repository.CreateAlert(request);
+     public Task<ResponseModel> CreateAlert(int deviceId, string placement, DateTime timestamp)
+    {
+         return _repository.CreateAlert(deviceId, placement,timestamp);
+            
      }
 }
